@@ -1,18 +1,66 @@
 body {
-  background-color:#857bcc;
-  color:white
+  background-image: url("resources/wallpaper.jpeg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+  padding-right: 10px;
 }
 
-h1 {
-  font-family:sans-serif
+#banner { 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  background-color:#857bcc;
+  color:white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+
+#banner-text a:link {
+  color: #1100ff;
+}
+/* visited link */
+#banner-text a:visited {
+  color: #78009d;
+}
+/* mouse over link */
+#banner-text a:hover {
+  color: #00cd30;
+}
+/* selected link */
+#banner-text a:active {
+  color: #800000;
+}
+
+#banner-text {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#projects {
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  width: 100%;
+}
+#projects > h1 {
+  text-align: center;
+  color: black;
 }
 
 .container {
+  margin:auto;
+  text-align: center;
   position: relative;
   height: 100%;
+  width: 80%;
   display: grid;
   grid-gap: 0px 20px;
-  text-align: center;
+  
 
   grid-template-areas: "header header"
                         "media about";
@@ -23,7 +71,6 @@ h1 {
 
   background-color: black;
   color: white;
-  
 }
 
 .header {
@@ -51,7 +98,7 @@ h1 {
   z-index: -1;
   padding: 5px;
   border-radius: 15px;
-  background-image: conic-gradient(from var(--angle), rgb(255, 255, 154), gold, rgb(255, 255, 154));
+  background-image: conic-gradient(from var(--angle), rgb(255, 255, 154), rgb(197, 167, 0), rgb(255, 255, 154));
   animation: 1s spin linear infinite;
 
 }
@@ -70,15 +117,3 @@ h1 {
     --angle: 360deg;
   }
 }
-
-
-
-/* 
-.class {
-style
-}
-
-#id {
-style
-}
-*/
